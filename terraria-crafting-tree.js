@@ -109,8 +109,8 @@ function draw() {
     // Display item selection screen
     } else if (statusSelectingItem) {
         zoomLevel = 1.2;
-        noStroke();
         fill(110, 110, 110);
+        noStroke();
         rect(-630, -460, 1260, 920);
         fill(0);
         textSize(40);
