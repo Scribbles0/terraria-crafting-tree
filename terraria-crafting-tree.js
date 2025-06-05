@@ -81,7 +81,7 @@ function setup() {
 }
 
 function draw() {
-    background(240);
+    background(30);
 
     cam.setPosition(cameraPan.x, cameraPan.y, cameraHeight * zoomLevel);
 
