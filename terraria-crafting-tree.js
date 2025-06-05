@@ -109,7 +109,7 @@ function draw() {
     // Display item selection screen
     } else if (statusSelectingItem) {
         zoomLevel = 1.2;
-        fill(90, 90, 90);
+        fill(100, 100, 100);
         noStroke();
         rect(-630, -460, 1260, 920);
         fill(0);
