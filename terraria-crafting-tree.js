@@ -101,7 +101,7 @@ function draw() {
 
     // Display "Loading sprites" screen
     if (statusLoadingSprites) {
-        fill(110, 110, 110);
+        fill(90, 90, 90);
         circle(0, 0, 30000);
         fill(0);
         textSize(40);
@@ -110,7 +110,6 @@ function draw() {
     } else if (statusSelectingItem) {
         zoomLevel = 1.2;
         fill(110, 110, 110);
-        noStroke();
         rect(-630, -460, 1260, 920);
         fill(0);
         textSize(40);
