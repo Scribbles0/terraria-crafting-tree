@@ -101,7 +101,7 @@ function draw() {
 
     // Display "Loading sprites" screen
     if (statusLoadingSprites) {
-        fill(90, 90, 90);
+        fill(110, 110, 110);
         circle(0, 0, 30000);
         fill(0);
         textSize(40);
@@ -109,7 +109,7 @@ function draw() {
     // Display item selection screen
     } else if (statusSelectingItem) {
         zoomLevel = 1.2;
-        fill(100, 100, 100);
+        fill(90, 90, 90);
         noStroke();
         rect(-630, -460, 1260, 920);
         fill(0);
@@ -147,9 +147,9 @@ function draw() {
         cursor(ARROW);
         // Display layout selection screen
         if (statusSelectingLayout) {
-            fill(60, 60, 60, 70);
+            fill(90, 90, 90, 70);
             circle(0, 0, 30000);
-            fill(100, 100, 100);
+            fill(110, 110, 110);
             rect(-400, -175, 800, 350);
             fill(0);
             text("Choose a crafting tree layout", 0, -100);
@@ -296,7 +296,7 @@ function draw() {
     // Display back button
     if (!statusSelectingItem && !statusLoadingSprites && !statusDisplayControls) {
         if (mousePos.x < (-width / 2 + 112) * zoomLevel + cameraPan.x && mousePos.y < (-height / 2 + 42) * zoomLevel + cameraPan.y) {
-            fill(90, 90, 90);
+            fill(110, 110, 1010);
             rect((-width / 2) * zoomLevel + cameraPan.x, (-height / 2) * zoomLevel + cameraPan.y, 112 * zoomLevel, 42 * zoomLevel);
             if (mouseIsPressed && !statusDragging) {
                 statusDragging = false;
