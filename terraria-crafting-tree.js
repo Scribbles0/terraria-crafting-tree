@@ -149,7 +149,7 @@ function draw() {
         if (statusSelectingLayout) {
             fill(60, 60, 60, 70);
             circle(0, 0, 30000);
-            fill(90, 90, 90);
+            fill(100, 100, 100);
             rect(-400, -175, 800, 350);
             fill(0);
             text("Choose a crafting tree layout", 0, -100);
