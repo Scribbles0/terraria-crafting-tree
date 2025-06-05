@@ -31,7 +31,7 @@ class Item {
         if (this.parent == null) {
             if (!this.hoveredOver) {
                 noStroke();
-                fill(110);
+                fill(110, 110, 110);
                 ellipse(this.position.x, this.position.y, this.socialDistance + 40);
             }
         }
@@ -72,7 +72,7 @@ class Item {
 
         fill(90, 90, 90, 70);
         circle(0, 0, 30000);
-        fill(90);
+        fill(90, 90 ,90);
         textSize(25);
         let nameAndQuantity = this.inGameItem.displayName;
         if (this.quantityNeeded > 1) {
@@ -210,10 +210,10 @@ class Item {
 
     displayItemTree(zoomLevel) {
         if (this.position.x + (this.scaledWidth / 2) + 7.5 > topCorner.x && this.position.x - (this.scaledWidth / 2) - 7.5 < bottomCorner.x && this.position.y + (this.scaledHeight / 2) + 7.5 > topCorner.y && this.position.y - (this.scaledHeight / 2) - 7.5 < bottomCorner.y) {
-            fill(110);
+            fill(110, 110, 110);
             rect(this.position.x - (this.scaledWidth / 2) - 7.5, this.position.y - (this.scaledHeight / 2) - 7.5, this.scaledWidth + 15, this.scaledHeight + 15);
             if (zoomLevel > 4.5) {
-                fill(90);
+                fill(90, 90 ,90);
                 ellipse(this.position.x, this.position.y, 30);
             } else {
                 image(this.inGameItem.sprite, this.position.x - this.scaledWidth * 0.5, this.position.y - this.scaledHeight * 0.5,
