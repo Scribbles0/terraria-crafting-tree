@@ -19,8 +19,8 @@ All item/recipe info is stored in [this spreadsheet](https://docs.google.com/spr
 
 ### Fargo's Soul Mod
 
-- [Soul of Eternity](https://fargosmod.wiki.gg/wiki/Soul_of_Eternity)
-- [Soul of Eternity](https://fargosmod.wiki.gg/wiki/Soul_of_Eternity) with Calamity, Thorium and Shadows of Abaddon items
+- [Soul of Eternity](https://fargosmods.wiki.gg/wiki/Soul_of_Eternity)
+- [Soul of Eternity](https://fargosmods.wiki.gg/wiki/Soul_of_Eternity) with Calamity, Thorium and Shadows of Abaddon items
 
 ### Calamity
 
