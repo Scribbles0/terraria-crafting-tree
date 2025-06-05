@@ -81,7 +81,7 @@ function setup() {
 }
 
 function draw() {
-    background(30);
+    background(90);
 
     cam.setPosition(cameraPan.x, cameraPan.y, cameraHeight * zoomLevel);
 
@@ -101,7 +101,7 @@ function draw() {
 
     // Display "Loading sprites" screen
     if (statusLoadingSprites) {
-        fill(30);
+        fill(90);
         circle(0, 0, 30000);
         fill(0);
         textSize(40);
@@ -109,7 +109,7 @@ function draw() {
     // Display item selection screen
     } else if (statusSelectingItem) {
         zoomLevel = 1.2;
-        fill(30);
+        fill(90);
         noStroke();
         rect(-630, -460, 1260, 920);
         fill(0);
@@ -147,9 +147,9 @@ function draw() {
         cursor(ARROW);
         // Display layout selection screen
         if (statusSelectingLayout) {
-            fill(200, 200, 200, 70);
+            fill(60, 60, 60, 70);
             circle(0, 0, 30000);
-            fill(30);
+            fill(90);
             rect(-400, -175, 800, 350);
             fill(0);
             text("Choose a crafting tree layout", 0, -100);
@@ -206,9 +206,9 @@ function draw() {
             }
         } else if (selectedItem != null) {
             cursor("pointer");
-            fill(200, 200, 200, 50);
+            fill(60, 60, 60, 50);
             circle(0, 0, 30000);
-            fill(30);
+            fill(90);
             circle(selectedItem.position.x, selectedItem.position.y, 120)
             image(selectedItem.sprite, selectedItem.position.x - selectedItem.scaledWidth * 0.75, selectedItem.position.y - selectedItem.scaledHeight * 0.75,
                   selectedItem.scaledWidth * 1.5, selectedItem.scaledHeight * 1.5);
@@ -266,7 +266,7 @@ function draw() {
         let textOpacity = map(frameCount - firstLoadTime, 0, 300, 2000, 0);
         textSize(25 * zoomLevel);
         textAlign(LEFT);
-        fill(30, 30, 30, textOpacity);
+        fill(90, 90, 90, textOpacity);
         text("Press enter to toggle controls", (-width / 2 + 12) * zoomLevel + cameraPan.x, (-height / 2 + 67) * zoomLevel + cameraPan.y);
         fill(0, 0, 0, textOpacity);
         text("Press enter to toggle controls", (-width / 2 + 10) * zoomLevel + cameraPan.x, (-height / 2 + 65) * zoomLevel + cameraPan.y);
@@ -278,7 +278,7 @@ function draw() {
         let textPosition = new p5.Vector((-width / 2 + 10) * zoomLevel + cameraPan.x, (-height / 2 + 5) * zoomLevel + cameraPan.y);
         textSize(20 * zoomLevel);
         textAlign(LEFT);
-        fill(30);
+        fill(90);
         text("Click and drag to pan around", textPosition.x + 2 * zoomLevel, textPosition.y + 27 * zoomLevel);
         text("Scroll or use arrow keys to zoom in and out", textPosition.x + 2 * zoomLevel, textPosition.y + 54 * zoomLevel);
         text("ESC to choose a different item", textPosition.x + 2 * zoomLevel, textPosition.y + 81 * zoomLevel);
@@ -296,7 +296,7 @@ function draw() {
     // Display back button
     if (!statusSelectingItem && !statusLoadingSprites && !statusDisplayControls) {
         if (mousePos.x < (-width / 2 + 112) * zoomLevel + cameraPan.x && mousePos.y < (-height / 2 + 42) * zoomLevel + cameraPan.y) {
-            fill(30);
+            fill(90);
             rect((-width / 2) * zoomLevel + cameraPan.x, (-height / 2) * zoomLevel + cameraPan.y, 112 * zoomLevel, 42 * zoomLevel);
             if (mouseIsPressed && !statusDragging) {
                 statusDragging = false;
@@ -308,7 +308,7 @@ function draw() {
         }
         textSize(25 * zoomLevel);
         textAlign(LEFT);
-        fill(30, 30, 30);
+        fill(90, 90, 90);
         text("< Back", (-width / 2 + 12) * zoomLevel + cameraPan.x, (-height / 2 + 32) * zoomLevel + cameraPan.y);
         fill(0, 0, 0);
         text("< Back", (-width / 2 + 10) * zoomLevel + cameraPan.x, (-height / 2 + 30) * zoomLevel + cameraPan.y);
