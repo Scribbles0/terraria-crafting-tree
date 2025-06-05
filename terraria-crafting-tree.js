@@ -109,6 +109,7 @@ function draw() {
     // Display item selection screen
     } else if (statusSelectingItem) {
         zoomLevel = 1.2;
+        nostroke();
         fill(110, 110, 110);
         rect(-630, -460, 1260, 920);
         fill(0);
@@ -207,7 +208,7 @@ function draw() {
             cursor("pointer");
             fill(60, 60, 60, 50);
             circle(0, 0, 30000);
-            fill(90, 90, 90);
+            fill(110, 110, 110);
             circle(selectedItem.position.x, selectedItem.position.y, 120)
             image(selectedItem.sprite, selectedItem.position.x - selectedItem.scaledWidth * 0.75, selectedItem.position.y - selectedItem.scaledHeight * 0.75,
                   selectedItem.scaledWidth * 1.5, selectedItem.scaledHeight * 1.5);
